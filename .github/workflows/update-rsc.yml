@@ -32,14 +32,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Run script to update GitHub IPs
-        run: python scripts/generate-github-ip.py
-
-      - name: Run script to update Uptime Robot IPs
-        run: python scripts/generate-uptimerobot-ip.py
-
-      - name: Run script to update Cloudflare IPs
-        run: python scripts/generate-cloudflare-ip.py
+      - name: Run scripts to update IPs
+        run: |
+          python scripts/generate-github-ip.py
+          python scripts/generate-uptimerobot-ip.py
+          python scripts/generate-cloudflare-ip.py
 
       - name: Commit & Push changes
         uses: actions-js/push@master
