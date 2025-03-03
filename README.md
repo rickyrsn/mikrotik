@@ -27,7 +27,6 @@ This repository contains automatically generated MikroTik RouterOS scripts for m
 
 1. Upload the `.rsc` files to your router via WinBox or WebFig
 2. Create a schedule using these commands:
-
 ```routeros
 /system scheduler
 add interval=24h name=update-ip-lists on-event=\
@@ -42,7 +41,6 @@ start-date=jan/01/1970 start-time=03:00:00
 ### Method 2: Automatic Download and Import
 
 1. Create a script to download and import the files:
-
 ```routeros
 /system script
 add name=update-ip-lists source={
@@ -65,7 +63,6 @@ add name=update-ip-lists source={
 ```
 
 2. Create a scheduler to run the script:
-
 ```routeros
 /system scheduler
 add interval=24h name=auto-update-ip-lists on-event=\
