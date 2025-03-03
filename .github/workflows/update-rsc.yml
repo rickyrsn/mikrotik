@@ -38,17 +38,11 @@ jobs:
           python scripts/generate-uptimerobot-ip.py
           python scripts/generate-cloudflare-ip.py
 
-      - name: Commit and Push Changes
+      - name: Commit changes
+        if: steps.git-check.outputs.changed > 0
         run: |
-          # configure user
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-
-          # stage any file changes to be committed
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add .
-
-          # make commit with staged changes
           git commit -m "Updated on $(TZ='Asia/Jakarta' date +'%Y-%m-%d %H:%M:%S')"
-
-          # push the commit back up to source GitHub repository
           git push
