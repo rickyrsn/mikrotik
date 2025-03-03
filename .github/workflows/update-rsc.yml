@@ -1,0 +1,47 @@
+name: Update GitHub IPs
+
+on:
+  schedule:
+    - cron: "0 17 * * *"  # Runs every day at 00:00 GMT+7 (WIB)
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-ips:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run script to update GitHub IPs
+        run: python scripts/generate-github-ip.py
+
+      - name: Run script to update Uptime Robot IPs
+        run: python scripts/generate-uptimerobot-ip.py
+
+      - name: Run script to update Cloudflare IPs
+        run: python scripts/generate-cloudflare-ip.py
+
+      - name: Commit & push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Updated on $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
