@@ -36,7 +36,7 @@ add interval=24h name=update-ip-lists on-event=\
 \nimport github-hooks.rsc\r\
 \nimport uptime-robot.rsc" \
 policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
-start-date=jan/01/2024 start-time=00:00:00
+start-date=jan/01/1970 start-time=03:00:00
 ```
 
 ### Method 2: Automatic Download and Import
