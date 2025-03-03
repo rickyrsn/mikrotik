@@ -11,6 +11,8 @@ permissions:
 jobs:
   update-ips:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Jakarta
 
     steps:
       - name: Checkout repository

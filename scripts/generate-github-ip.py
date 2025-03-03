@@ -2,6 +2,7 @@ import requests
 import time
 import os
 from datetime import datetime
+import pytz
 
 # Define base directory (one level up from "scripts")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,7 +31,8 @@ ip_actions = data.get("actions", [])
 ip_hooks = data.get("hooks", [])
 
 # Timestamp & execution time
-timestamp = datetime.now().strftime("%d %B %Y %H:%M:%S WIB")
+timezone = pytz.timezone("Asia/Jakarta")
+timestamp = datetime.now(timezone).strftime("%d %B %Y %H:%M:%S %Z")
 execution_time = round(time.time() - start_time, 3)
 
 # MikroTik script headers
