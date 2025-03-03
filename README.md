@@ -62,6 +62,7 @@ add name=update-ip-lists source={
     
     :log info "IP lists updated successfully"
 }
+```
 
 2. Create a scheduler to run the script:
 
