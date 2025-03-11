@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address Uptime Robot
 # ke RouterOS dalam ADDRESS-LIST dengan nama "uptimerobot"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 11 March 2025 00:12:33 WIB ... 149 lines
-# Generated in 0.645 seconds
+# Generated at 12 March 2025 00:12:49 WIB ... 149 lines
+# Generated in 0.578 seconds
 # How-to: https://uptimerobot.com/
 
-/sys note set show-at-login=yes note="Using uptime-robot.rsc from https://github.com/rickyrsn/mikrotik, 11 March 2025 00:12:33 WIB, 149 lines."
+/sys note set show-at-login=yes note="Using uptime-robot.rsc from https://github.com/rickyrsn/mikrotik, 12 March 2025 00:12:49 WIB, 149 lines."
 
 /ip firewall address-list
 rem [find list="uptimerobot"]
