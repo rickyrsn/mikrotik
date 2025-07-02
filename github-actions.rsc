@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address GitHub Github Actions
 # ke RouterOS dalam ADDRESS-LIST dengan nama "github_actions"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 01 July 2025 00:13:25 WIB ... 5265 lines
-# Generated in 0.256 seconds
+# Generated at 03 July 2025 00:14:00 WIB ... 5275 lines
+# Generated in 0.112 seconds
 # How-to: https://docs.github.com/en/rest/meta
 
-/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 01 July 2025 00:13:25 WIB, 5265 lines."
+/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 03 July 2025 00:14:00 WIB, 5275 lines."
 
 /ip firewall address-list
 rem [find list="github_actions"]
@@ -587,6 +587,16 @@ add list=github_actions address="13.105.220.182/31"
 add list=github_actions address="13.105.220.184/31"
 add list=github_actions address="13.105.220.186/31"
 add list=github_actions address="13.105.220.188/31"
+add list=github_actions address="13.105.220.190/31"
+add list=github_actions address="13.105.220.192/31"
+add list=github_actions address="13.105.220.194/31"
+add list=github_actions address="13.105.220.196/31"
+add list=github_actions address="13.105.220.198/31"
+add list=github_actions address="13.105.220.200/31"
+add list=github_actions address="13.105.220.202/31"
+add list=github_actions address="13.105.220.204/31"
+add list=github_actions address="13.105.220.206/31"
+add list=github_actions address="13.105.220.208/31"
 add list=github_actions address="20.1.128.0/17"
 add list=github_actions address="20.3.0.0/16"
 add list=github_actions address="20.4.0.0/16"
