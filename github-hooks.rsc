@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address GitHub Github Hooks
 # ke RouterOS dalam ADDRESS-LIST dengan nama "github_hooks"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 12 July 2025 00:14:25 WIB ... 6 lines
-# Generated in 0.121 seconds
+# Generated at 13 July 2025 00:12:20 WIB ... 6 lines
+# Generated in 0.241 seconds
 # How-to: https://docs.github.com/en/rest/meta
 
-/sys note set show-at-login=yes note="Using github-hooks.rsc from https://github.com/rickyrsn/mikrotik, 12 July 2025 00:14:25 WIB, 6 lines."
+/sys note set show-at-login=yes note="Using github-hooks.rsc from https://github.com/rickyrsn/mikrotik, 13 July 2025 00:12:20 WIB, 6 lines."
 
 /ip firewall address-list
 rem [find list="github_hooks"]
