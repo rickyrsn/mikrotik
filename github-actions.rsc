@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address GitHub Github Actions
 # ke RouterOS dalam ADDRESS-LIST dengan nama "github_actions"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 17 December 2025 00:19:31 WIB ... 5484 lines
-# Generated in 0.048 seconds
+# Generated at 18 December 2025 00:19:25 WIB ... 5484 lines
+# Generated in 0.253 seconds
 # How-to: https://docs.github.com/en/rest/meta
 
-/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 17 December 2025 00:19:31 WIB, 5484 lines."
+/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 18 December 2025 00:19:25 WIB, 5484 lines."
 
 /ip firewall address-list
 rem [find list="github_actions"]
