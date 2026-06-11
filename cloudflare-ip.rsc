@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address Cloudflare
 # ke RouterOS dalam ADDRESS-LIST dengan nama "cloudflare"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 11 June 2026 02:29:43 WIB ... 15 lines
-# Generated in 0.078 seconds
+# Generated at 12 June 2026 02:30:44 WIB ... 15 lines
+# Generated in 0.088 seconds
 # How-to: https://developers.cloudflare.com/fundamentals/get-started/basic-tasks/find-cloudflare-ip-addresses/
 
-/sys note set show-at-login=yes note="Using cloudflare-ip.rsc from https://github.com/rickyrsn/mikrotik, 11 June 2026 02:29:43 WIB, 15 lines."
+/sys note set show-at-login=yes note="Using cloudflare-ip.rsc from https://github.com/rickyrsn/mikrotik, 12 June 2026 02:30:44 WIB, 15 lines."
 
 /ip firewall address-list
 rem [find list="cloudflare"]
