@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address Uptime Robot
 # ke RouterOS dalam ADDRESS-LIST dengan nama "uptimerobot"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 25 June 2026 01:47:10 WIB ... 116 lines
-# Generated in 0.232 seconds
+# Generated at 26 June 2026 02:03:03 WIB ... 103 lines
+# Generated in 0.306 seconds
 # How-to: https://uptimerobot.com/
 
-/sys note set show-at-login=yes note="Using uptime-robot.rsc from https://github.com/rickyrsn/mikrotik, 25 June 2026 01:47:10 WIB, 116 lines."
+/sys note set show-at-login=yes note="Using uptime-robot.rsc from https://github.com/rickyrsn/mikrotik, 26 June 2026 02:03:03 WIB, 103 lines."
 
 /ip firewall address-list
 rem [find list="uptimerobot"]
@@ -56,9 +56,6 @@ add list=uptimerobot address="54.249.170.27"
 add list=uptimerobot address="63.178.84.147"
 add list=uptimerobot address="64.225.81.248"
 add list=uptimerobot address="64.225.82.147"
-add list=uptimerobot address="69.162.124.227"
-add list=uptimerobot address="69.162.124.235"
-add list=uptimerobot address="69.162.124.238"
 add list=uptimerobot address="78.46.190.63"
 add list=uptimerobot address="78.46.215.1"
 add list=uptimerobot address="78.47.98.55"
@@ -112,16 +109,6 @@ add list=uptimerobot address="209.38.49.226"
 add list=uptimerobot address="209.38.51.43"
 add list=uptimerobot address="209.38.53.7"
 add list=uptimerobot address="209.38.124.252"
-add list=uptimerobot address="216.144.248.18"
-add list=uptimerobot address="216.144.248.19"
-add list=uptimerobot address="216.144.248.21"
-add list=uptimerobot address="216.144.248.22"
-add list=uptimerobot address="216.144.248.23"
-add list=uptimerobot address="216.144.248.24"
-add list=uptimerobot address="216.144.248.25"
-add list=uptimerobot address="216.144.248.26"
 add list=uptimerobot address="216.144.248.27"
 add list=uptimerobot address="216.144.248.28"
 add list=uptimerobot address="216.144.248.29"
-add list=uptimerobot address="216.144.248.30"
-add list=uptimerobot address="216.245.221.83"
