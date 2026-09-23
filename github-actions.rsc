@@ -1,11 +1,11 @@
 # Script untuk menambahkan IP Address GitHub Github Actions
 # ke RouterOS dalam ADDRESS-LIST dengan nama "github_actions"
 # Script created by: rickyrsn <https://github.com/rickyrsn>
-# Generated at 23 September 2026 02:58:58 WIB ... 7306 lines
-# Generated in 0.05 seconds
+# Generated at 24 September 2026 02:55:52 WIB ... 7326 lines
+# Generated in 0.312 seconds
 # How-to: https://docs.github.com/en/rest/meta
 
-/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 23 September 2026 02:58:58 WIB, 7306 lines."
+/sys note set show-at-login=yes note="Using github-actions.rsc from https://github.com/rickyrsn/mikrotik, 24 September 2026 02:55:52 WIB, 7326 lines."
 
 /ip firewall address-list
 rem [find list="github_actions"]
@@ -7315,3 +7315,23 @@ add list=github_actions address="2a01:111:f403:f904::/62"
 add list=github_actions address="2a01:111:f403:f908::/62"
 add list=github_actions address="2a01:111:f403:f90c::/62"
 add list=github_actions address="2a01:111:f403:f910::/62"
+add list=github_actions address="3.219.87.128/32"
+add list=github_actions address="18.214.123.177/32"
+add list=github_actions address="18.233.87.154/32"
+add list=github_actions address="34.202.115.28/32"
+add list=github_actions address="34.202.143.207/32"
+add list=github_actions address="34.223.158.89/32"
+add list=github_actions address="34.237.233.57/32"
+add list=github_actions address="35.174.28.24/32"
+add list=github_actions address="44.228.147.113/32"
+add list=github_actions address="50.16.210.73/32"
+add list=github_actions address="52.7.11.124/32"
+add list=github_actions address="52.35.47.185/32"
+add list=github_actions address="52.40.23.199/32"
+add list=github_actions address="52.200.10.122/32"
+add list=github_actions address="54.211.170.155/32"
+add list=github_actions address="54.235.15.98/32"
+add list=github_actions address="54.245.203.201/32"
+add list=github_actions address="98.89.53.239/32"
+add list=github_actions address="100.62.132.232/32"
+add list=github_actions address="100.62.139.158/32"
